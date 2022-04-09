@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledApp } from "./App.styled";
-import logo from "../public/assets/logo.png";
+import logo from "../public/assets/logosmall.png";
 
 const App = () => {
     return (
