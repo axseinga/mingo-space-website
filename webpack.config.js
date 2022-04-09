@@ -82,6 +82,7 @@ module.exports = {
             template: path.join(PUBLIC_DIR, "index.html"),
             filename: "index.html",
             inject: "body",
+            favicon: "./public/favicon.ico",
         }),
         new CopyPlugin({
             patterns: [
