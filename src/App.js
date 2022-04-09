@@ -1,12 +1,12 @@
 import React from "react";
 import { StyledApp } from "./App.styled";
-import logo from "../public/assets/logosmall.png";
+import { GlobalStyle } from "./styles/globalStyle";
 
 const App = () => {
     return (
         <StyledApp>
+            <GlobalStyle />
             my App
-            <img src={logo} />
         </StyledApp>
     );
 };
