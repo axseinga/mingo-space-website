@@ -1,19 +1,19 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { HomePage } from "../pages/HomePage";
+import { CoursesPage } from "../pages/CoursesPage";
+import { AboutPage } from "../pages/AboutPage";
 
-export const Routes = () => {
+export const PagesRoutes = () => {
     return (
         <Routes>
-            <Route exact path="/" element={<div>HomePage</div>} />
-            <Route exact path="/courses" element={<div>Courses</div>} />
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/courses" element={<CoursesPage />} />
             <Route exact path="/pricing" element={<div>Pricing</div>} />
-            <Route exact path="/about" element={<div>About</div>} />
+            <Route exact path="/about" element={<AboutPage />} />
             <Route exact path="/resources" element={<div>Resources</div>} />
             <Route exact path="/contact" element={<div>Contact</div>} />
-            <Route
-                exact
-                path="/registration"
-                element={<div>Registration</div>}
-            />
+            <Route exact path="/register" element={<div>Registration</div>} />
         </Routes>
     );
 };

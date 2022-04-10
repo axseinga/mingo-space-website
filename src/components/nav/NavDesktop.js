@@ -40,7 +40,11 @@ export const NavDesktop = () => {
                         </li>
                     ))}
                 </ul>
-                <button>Register now</button>
+                <button>
+                    <StyledNavLinkDesktop to="/register">
+                        Register now
+                    </StyledNavLinkDesktop>
+                </button>
             </div>
         </StyledNavDesktop>
     );

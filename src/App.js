@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import { PagesRoutes } from "./routes/Routes";
 import { ThemeProvider } from "styled-components";
 import { StyledApp } from "./App.styled";
 import { GlobalStyle } from "./styles/globalStyle";
@@ -13,6 +14,7 @@ const App = () => {
                 <GlobalStyle />
                 <BrowserRouter>
                     <NavDesktop />
+                    <PagesRoutes />
                 </BrowserRouter>
             </StyledApp>
         </ThemeProvider>
