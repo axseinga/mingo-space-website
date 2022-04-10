@@ -24,12 +24,12 @@ export const NavDesktop = () => {
 
     return (
         <StyledNavDesktop>
-            <a href="#">
+            <StyledNavLinkDesktop to={"/"}>
                 <img
                     src="./assets/logo_mingospace.png"
                     alt="Mingo Space logo"
                 />
-            </a>
+            </StyledNavLinkDesktop>
             <div>
                 <ul>
                     {navLinks.map((link) => (

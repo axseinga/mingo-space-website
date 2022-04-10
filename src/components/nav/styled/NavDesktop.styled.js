@@ -33,4 +33,13 @@ export const StyledNavDesktop = styled.nav`
     }
 `;
 
-export const StyledNavLinkDesktop = styled(NavLink)``;
+export const StyledNavLinkDesktop = styled(NavLink)`
+    font-weight: 400;
+    color: ${theme.color.white};
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+        color: ${theme.color.btnDefault};
+    }
+`;
