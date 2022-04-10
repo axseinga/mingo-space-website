@@ -7,6 +7,7 @@ import { GlobalStyle } from "./styles/globalStyle";
 import { theme } from "./styles/theme";
 import { NavDesktop } from "./components/nav/NavDesktop";
 import { Footer } from "./components/footer/Footer";
+import { BackLink } from "./components/backlink/BackLink";
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                     <NavDesktop />
                     <PagesRoutes />
                     <Footer />
+                    <BackLink />
                 </BrowserRouter>
             </StyledApp>
         </ThemeProvider>
