@@ -16,4 +16,10 @@ export const theme = {
         fontLora: "Lora, serif",
         fontPoppins: "Poppins, sans-serif",
     },
+    fontSize: {
+        fsXl: "clamp(3.5rem, 12vw + 1 rem, 8rem)",
+        fs600: "2rem",
+        fs400: "1rem",
+    },
+    rootSize: "21px",
 };
