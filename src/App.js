@@ -16,7 +16,7 @@ const App = () => {
             <StyledApp>
                 <GlobalStyle />
                 <BrowserRouter>
-                    <NavMobile />
+                    <NavDesktop />
                     <PagesRoutes />
                     <Footer />
                     <BackLink />

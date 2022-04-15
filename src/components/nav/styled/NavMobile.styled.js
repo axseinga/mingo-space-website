@@ -46,7 +46,6 @@ export const StyledNavMobile = styled.nav`
         position: absolute;
         top: 60px;
         left: 0;
-        height: 90vh;
         width: 100vw;
         padding: 2rem 0.5rem;
         display: flex;

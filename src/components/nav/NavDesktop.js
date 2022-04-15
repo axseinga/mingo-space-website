@@ -4,6 +4,7 @@ import {
     StyledNavLinkDesktop,
 } from "./styled/NavDesktop.styled";
 import { Button } from "../button/Button";
+import { BsChevronDown } from "react-icons/bs";
 
 export const NavDesktop = () => {
     const navLinks = [
@@ -16,6 +17,7 @@ export const NavDesktop = () => {
                 { text: "Japanese", href: "/courses/japanese" },
                 { text: "Kids course", href: "/courses/kidscourse" },
             ],
+            class: "NavDesktop-courses",
         },
         { text: "Pricing", href: "/pricing" },
         { text: "About", href: "/about" },
@@ -34,11 +36,27 @@ export const NavDesktop = () => {
             <div>
                 <ul>
                     {navLinks.map((link) => (
-                        <li key={link.href}>
-                            <StyledNavLinkDesktop to={link.href}>
-                                {link.text}
-                            </StyledNavLinkDesktop>
-                        </li>
+                        <>
+                            <li key={link.href} className={link.class}>
+                                <StyledNavLinkDesktop to={link.href}>
+                                    {link.text}{" "}
+                                    {link.subNav && (
+                                        <BsChevronDown className="NavDesktop-icon" />
+                                    )}
+                                </StyledNavLinkDesktop>
+                            </li>
+                            {link.subNav && (
+                                <div className="NavDesktop-dropdown">
+                                    {link.subNav.map((sub) => (
+                                        <li>
+                                            <StyledNavLinkDesktop to={sub.href}>
+                                                {sub.text}{" "}
+                                            </StyledNavLinkDesktop>
+                                        </li>
+                                    ))}{" "}
+                                </div>
+                            )}
+                        </>
                     ))}
                 </ul>
                 <StyledNavLinkDesktop to="/register">

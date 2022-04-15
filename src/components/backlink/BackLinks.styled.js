@@ -4,6 +4,7 @@ export const StyledBackLink = styled.div`
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 99;
 
     .BackLink-icon {
         color: ${({ theme }) => theme.color.btnDefault};

@@ -9,16 +9,7 @@ export const NavMobile = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const navLinks = [
-        {
-            text: "Courses",
-            href: "/courses",
-            subNav: [
-                { text: "Mandarin", href: "/courses/mandarin" },
-                { text: "Malay", href: "/courses/malay" },
-                { text: "Japanese", href: "/courses/japanese" },
-                { text: "Kids course", href: "/courses/kidscourse" },
-            ],
-        },
+        { text: "Courses", href: "/courses" },
         { text: "Pricing", href: "/pricing" },
         { text: "About", href: "/about" },
         { text: "Resources", href: "/resources" },
@@ -42,7 +33,10 @@ export const NavMobile = () => {
                 <div className="NavMobile-menu">
                     <ul>
                         {navLinks.map((link) => (
-                            <li key={link.href}>
+                            <li
+                                key={link.href}
+                                onClick={() => setShowMenu(false)}
+                            >
                                 <StyledNavLinkMobile to={link.href}>
                                     {link.text}
                                 </StyledNavLinkMobile>
@@ -53,7 +47,7 @@ export const NavMobile = () => {
                         <Button
                             type="button"
                             default
-                            onClick={() => console.log("clicked btn")}
+                            onClick={() => setShowMenu(false)}
                         >
                             Register now
                         </Button>
