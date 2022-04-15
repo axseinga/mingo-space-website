@@ -13,6 +13,8 @@ export const StyledNavDesktop = styled.nav`
 
     & > div {
         display: flex;
+        align-items: center;
+        justify-content: center;
 
         & ul {
             display: flex;

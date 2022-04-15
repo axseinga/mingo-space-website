@@ -15,7 +15,7 @@ export const Footer = () => {
             ],
         },
         {
-            title: "QuickLinks",
+            title: "Quick Links",
             links: [
                 { text: "Sign up", href: "/register" },
                 { text: "Pricing", href: "/pricing" },
