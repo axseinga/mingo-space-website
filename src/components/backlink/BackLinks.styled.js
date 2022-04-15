@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../styles/theme";
 
 export const StyledBackLink = styled.div`
     position: fixed;
@@ -7,7 +6,7 @@ export const StyledBackLink = styled.div`
     bottom: 20px;
 
     .BackLink-icon {
-        color: ${theme.color.btnDefault};
+        color: ${({ theme }) => theme.color.btnDefault};
         font-size: 2rem;
         cursor: pointer;
 

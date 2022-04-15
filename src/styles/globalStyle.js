@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { theme } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
 ${reset};
@@ -9,9 +8,9 @@ ${reset};
 }
 html {
     //font-size: 62.5%;
-    font-family: ${theme.font.fontPoppins};
+    font-family: ${({ theme }) => theme.font.fontPoppins};
     font-weight: 500;
-    color: ${theme.color.text}
+    color: ${({ theme }) => theme.color.text};
 };
 body { 
     box-sizing: inherit;

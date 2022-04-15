@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { theme } from "../../../styles/theme";
 
 export const StyledFooterLinks = styled.div`
     h4 {
@@ -15,11 +14,11 @@ export const StyledFooterLinks = styled.div`
 
 export const StyledNavLinkFooter = styled(NavLink)`
     font-weight: 400;
-    color: ${theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     text-decoration: none;
 
     &:active,
     &:hover {
-        color: ${theme.color.btnDefault};
+        color: ${({ theme }) => theme.color.btnDefault};
     }
 `;

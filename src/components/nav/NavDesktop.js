@@ -3,6 +3,7 @@ import {
     StyledNavDesktop,
     StyledNavLinkDesktop,
 } from "./styled/NavDesktop.styled";
+import { Button } from "../button/Button";
 
 export const NavDesktop = () => {
     const navLinks = [
@@ -41,7 +42,13 @@ export const NavDesktop = () => {
                     ))}
                 </ul>
                 <StyledNavLinkDesktop to="/register">
-                    <button>Register now</button>
+                    <Button
+                        type="button"
+                        default
+                        onClick={() => console.log("clicked btn")}
+                    >
+                        Register now
+                    </Button>
                 </StyledNavLinkDesktop>
             </div>
         </StyledNavDesktop>

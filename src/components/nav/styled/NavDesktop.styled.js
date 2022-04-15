@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { theme } from "../../../styles/theme";
 
 export const StyledNavDesktop = styled.nav`
     display: flex;
@@ -23,7 +22,7 @@ export const StyledNavDesktop = styled.nav`
             & li {
                 margin: 0 2rem;
                 & a {
-                    color: ${theme.color.text};
+                    color: ${({ theme }) => theme.color.text};
                     text-decoration: none;
                 }
             }
@@ -37,11 +36,11 @@ export const StyledNavDesktop = styled.nav`
 
 export const StyledNavLinkDesktop = styled(NavLink)`
     font-weight: 400;
-    color: ${theme.color.white};
+    color: ${({ theme }) => theme.color.white};
     text-decoration: none;
 
     &:active,
     &:hover {
-        color: ${theme.color.btnDefault};
+        color: ${({ theme }) => theme.color.btnDefault};
     }
 `;
