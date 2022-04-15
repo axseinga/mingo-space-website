@@ -1,28 +1,35 @@
 import styled from "styled-components";
-import { theme } from "../../../styles/theme";
 
 export const StyledFooter = styled.footer`
-    background-color: ${theme.color.text};
-    color: ${theme.color.white};
-    padding: 3rem;
-    display: flex;
-    gap: 7rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: ${({ theme }) => theme.color.text};
+    color: ${({ theme }) => theme.color.white};
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 37.5em) {
+        padding: 3rem;
+        display: flex;
+        gap: 7rem;
+    }
 
     h4 + div {
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-top: 1rem;
     }
 
     .Footer-icon {
-        color: ${theme.color.white};
+        color: ${({ theme }) => theme.color.white};
         font-size: 1.5rem;
         margin: 0 0.5rem;
 
         &:hover,
         &:active {
-            color: ${theme.color.btnDefault};
+            color: ${({ theme }) => theme.color.btnDefault};
         }
     }
 `;
