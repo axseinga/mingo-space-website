@@ -27,4 +27,9 @@ export const StyledButton = styled.button`
         css`
             background-color: ${({ theme }) => theme.color.disabled};
         `}
+     ${(props) =>
+        props.big &&
+        css`
+            font-size: 1.3rem;
+        `}
 `;

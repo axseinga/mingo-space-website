@@ -68,6 +68,10 @@ export const StyledNavDesktop = styled.nav`
     .NavDesktop-courses:hover + .NavDesktop-dropdown {
         display: block;
     }
+
+    .NavDesktop-dropdown:hover .NavDesktop-dropdown {
+        display: block;
+    }
 `;
 
 export const StyledNavLinkDesktop = styled(NavLink)`
