@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { CoursesSection } from "./Courses";
 import { ClassesSection } from "./Classes";
 import { TestimonialsSection } from "./Testimonials";
+import { FAQ } from "./FAQ";
 import { RegisterSection } from "./Register";
 
 export const HomePage = () => {
@@ -13,6 +14,7 @@ export const HomePage = () => {
             <CoursesSection />
             <ClassesSection />
             <TestimonialsSection />
+            <FAQ />
             <RegisterSection />
         </StyledHomePage>
     );

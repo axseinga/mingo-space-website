@@ -170,3 +170,25 @@ export const StyledRegisterSection = styled.section`
         line-height: 1.4rem;
     }
 `;
+
+export const StyledFAQSection = styled.section`
+    padding: 2rem;
+    background-color: ${({ theme }) => theme.color.bg};
+
+    & h2 {
+        font-family: ${({ theme }) => theme.font.fontLora};
+        color: ${({ theme }) => theme.color.black};
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    & > div {
+        border-bottom: 1px solid ${({ theme }) => theme.color.line};
+
+        &:first-child {
+            border-top: 1px solid ${({ theme }) => theme.color.line};
+        }
+    }
+`;

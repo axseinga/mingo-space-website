@@ -5,6 +5,7 @@ export const theme = {
         black: "#000000",
         text: "#333333",
         disabled: "#C4C4C4",
+        line: "#C8C9CD",
         bg: "#EEF6F3",
         btnDefault: "#FD5C2A",
         btnHover: "#FF5B18",
