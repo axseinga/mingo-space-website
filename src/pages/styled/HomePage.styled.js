@@ -80,7 +80,7 @@ export const StyledCoursesSection = styled.section`
         }
 
         & span {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             position: absolute;
             top: 50%;
@@ -97,7 +97,6 @@ export const StyledNavLinkCourses = styled(NavLink)`
 `;
 
 export const StyledClassesSection = styled.section`
-    margin: 3rem 0;
     padding: 2rem;
 
     & h2 {
@@ -127,6 +126,26 @@ export const StyledClassesSection = styled.section`
     & img {
         width: 100%;
         object-fit: cover;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+        box-shadow: ${({ theme }) => theme.shadow};
+    }
+`;
+
+export const StyledTestimonialsSection = styled.section`
+    padding: 2rem;
+
+    & h2 {
+        font-family: ${({ theme }) => theme.font.fontLora};
+        color: ${({ theme }) => theme.color.black};
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    & > p {
+        margin: 1.5rem 0;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
     }
 `;

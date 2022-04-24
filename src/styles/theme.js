@@ -22,5 +22,6 @@ export const theme = {
         fs600: "2rem",
         fs400: "1rem",
     },
+    shadow: "0px 0px 20px rgba(51, 51, 51, 0.1)",
     rootSize: "21px",
 };
