@@ -38,8 +38,9 @@ export const TestimonialsSection = () => {
             <h2>Testimonials from our students</h2>
             <p>We’re proud of teaching students from around the world.</p>
             <div>
-                {testimonials.map((t) => (
+                {testimonials.map((t, i) => (
                     <TestimonialCard
+                        key={`${name}_${i}`}
                         name={t.name}
                         img={t.img}
                         flag={t.flag}

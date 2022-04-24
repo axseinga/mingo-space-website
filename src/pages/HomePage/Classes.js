@@ -26,8 +26,8 @@ export const ClassesSection = () => {
         <StyledClassesSection>
             <h2>Personalized 1:1 online classes</h2>
             <div>
-                {classes.map((cl) => (
-                    <div>
+                {classes.map((cl, i) => (
+                    <div key={i}>
                         <div>
                             <h3>{cl.title}</h3>
                             <p>{cl.paragraph}</p>

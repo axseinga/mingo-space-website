@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { CoursesSection } from "./Courses";
 import { ClassesSection } from "./Classes";
 import { TestimonialsSection } from "./Testimonials";
+import { RegisterSection } from "./Register";
 
 export const HomePage = () => {
     return (
@@ -12,6 +13,7 @@ export const HomePage = () => {
             <CoursesSection />
             <ClassesSection />
             <TestimonialsSection />
+            <RegisterSection />
         </StyledHomePage>
     );
 };
