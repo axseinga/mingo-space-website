@@ -4,15 +4,15 @@ import {
     StyledNavLinkCourses,
 } from "../styled/HomePage.styled";
 
-export const CoursesSection = ({ header, text, courses, bgColor }) => {
+export const CoursesSection = ({ data }) => {
     return (
-        <StyledCoursesSection bgColor={bgColor}>
+        <StyledCoursesSection bgColor={data?.bgColor}>
             <div>
-                <h2>{header}</h2>
-                <p>{text}</p>
+                <h2>{data?.header}</h2>
+                <p>{data?.paragraph}</p>
             </div>
             <div>
-                {courses.map((course) => (
+                {data?.courses.map((course) => (
                     <StyledNavLinkCourses to={course.href} key={course.lang}>
                         <div>
                             <img

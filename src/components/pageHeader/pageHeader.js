@@ -1,6 +1,8 @@
 import React from "react";
+import { StyledHeader } from "./pageHeader.styled";
+import { Button } from "../button/Button";
 
-export const Header = () => {
+export const Header = ({ header, paragraph, btnText, btnHref, img }) => {
     return (
         <StyledHeader>
             <div>
