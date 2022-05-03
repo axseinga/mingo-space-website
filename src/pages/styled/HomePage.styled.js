@@ -47,7 +47,7 @@ export const StyledHeader = styled.div`
 export const StyledCoursesSection = styled.section`
     margin: 3rem 0;
     padding: 2rem;
-    background-color: ${({ theme }) => theme.color.bg};
+    background-color: ${({ bgColor }) => bgColor};
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -192,3 +192,5 @@ export const StyledFAQSection = styled.section`
         }
     }
 `;
+
+export const StyledNavLinkRegister = styled(NavLink)``;

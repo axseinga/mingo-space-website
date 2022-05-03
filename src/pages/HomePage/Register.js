@@ -1,5 +1,8 @@
 import React from "react";
-import { StyledRegisterSection } from "../styled/HomePage.styled";
+import {
+    StyledRegisterSection,
+    StyledNavLinkRegister,
+} from "../styled/HomePage.styled";
 import { Button } from "../../components/button/Button";
 
 export const RegisterSection = () => {
@@ -7,13 +10,11 @@ export const RegisterSection = () => {
         <StyledRegisterSection>
             <h2>Ready to register?</h2>
             <p>No payment required now.</p>
-            <Button
-                type="button"
-                default
-                onClick={() => console.log("clicked btn")}
-            >
-                Register now
-            </Button>
+            <StyledNavLinkRegister to={"/register"}>
+                <Button type="button" default>
+                    Register now
+                </Button>
+            </StyledNavLinkRegister>
         </StyledRegisterSection>
     );
 };

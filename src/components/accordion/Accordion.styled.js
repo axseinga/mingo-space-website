@@ -14,6 +14,8 @@ export const StyledAccordion = styled.div`
         & button {
             background-color: transparent;
             border: none;
+            cursor: pointer;
+
             & img {
                 width: 2.5rem;
             }
