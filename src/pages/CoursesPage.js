@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledCoursesPage } from "./styled/CoursesPage.styled";
-import { CoursesSection } from "./HomePage/Courses";
+import { CoursesSection } from "../components/courses/Courses";
 
 export const CoursesPage = () => {
     const coursesSection = {

@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledHomePage } from "../styled/HomePage.styled";
 import { Header } from "../../components/pageHeader/pageHeader";
-import { CoursesSection } from "./Courses";
+import { CoursesSection } from "../../components/courses/Courses";
 import { ClassesSection } from "./Classes";
 import { TestimonialsSection } from "./Testimonials";
 import { FAQ } from "./FAQ";

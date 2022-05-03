@@ -1,8 +1,5 @@
 import React from "react";
-import {
-    StyledCoursesSection,
-    StyledNavLinkCourses,
-} from "../styled/HomePage.styled";
+import { StyledCoursesSection, StyledNavLinkCourses } from "./Courses.styled";
 
 export const CoursesSection = ({ data }) => {
     return (
