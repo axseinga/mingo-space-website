@@ -9,7 +9,14 @@ import { RegisterSection } from "./Register";
 import { theme } from "../../styles/theme";
 
 export const HomePage = () => {
-    const headerSection = [];
+    const headerSection = {
+        header: "Learn a new language with 1:1 online classes",
+        paragraph: `<strong>Mandarin</strong>, <strong>Japanese</strong>, and <strong>Malay</strong> private classes at an affordable
+    price for both adults and kids.`,
+        btnText: "Register now",
+        btnHref: "/register",
+        img: "./assets/Pic_Practicelanguageskills1.jpg",
+    };
 
     const coursesSection = {
         header: "Language courses we offer",
@@ -42,7 +49,7 @@ export const HomePage = () => {
 
     return (
         <StyledHomePage>
-            <Header />
+            <Header data={headerSection} />
             <CoursesSection data={coursesSection} />
             <ClassesSection />
             <TestimonialsSection />
