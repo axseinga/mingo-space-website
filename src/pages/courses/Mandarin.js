@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../../components/pageHeader/pageHeader";
 import { AboutCourse } from "../../components/aboutCourse/aboutCourse";
+import { TeacherSection } from "../../components/teachersSection/TeachersSection";
 import { TestimonialsSection } from "../../components/testimonials/Testimonials";
 import { RegisterSection } from "../../components/registerBanner/Register";
 import { StyledLanguagePage } from "./styled/LanguagePage.styled";
@@ -53,10 +54,37 @@ export const MandarinCoursePage = () => {
             review: "“I’ve had a number of lessons with Zhen. He always prepares interesting convo topics beforehand so that I can practice my speaking.”",
         },
     ];
+    const teachersData = [
+        {
+            img: "/assets/Pic_TeacherPropic(Zhen).jpg",
+            name: "Zhen Huang",
+            about: "I have been teaching Mandarin to both adults and kids for the past 5 years. I believe that learning Mandarin should be ...See More",
+            langs: ["Mandarin", "English", "Malay"],
+        },
+        {
+            img: "/assets/Pic_TeacherPropic(Melanie).jpg",
+            name: "Melanie Chou",
+            about: "As a professional Mandarin teacher by day, I carry forward the same patient approach with my private lesson students ...See More",
+            langs: ["Mandarin", "English"],
+        },
+        {
+            img: "/assets/Pic_TeacherPropic(Lissa).jpg",
+            name: "Lissa Zheng",
+            about: "I’m a certified HSK Mandarin teacher and have been tutoring and teaching Mandarin for 1.5 years. Learning should be ...See More",
+            langs: ["Mandarin", "English"],
+        },
+        {
+            img: "/assets/Pic_TeacherPropic(Dylan).jpg",
+            name: "Dylan Fan",
+            about: "I specialize in teaching Mandarin to English speakers and majored in Chinese Language at the University of Waterloo. Now ...See More",
+            langs: ["Mandarin", "English"],
+        },
+    ];
     return (
         <StyledLanguagePage>
             <Header data={headerData} />
             <AboutCourse data={aboutData} />
+            <TeacherSection teachersData={teachersData} />
             <TestimonialsSection testimonials={testimonialsData} />
             <RegisterSection />
         </StyledLanguagePage>
