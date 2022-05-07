@@ -28,10 +28,7 @@ export const NavDesktop = () => {
     return (
         <StyledNavDesktop>
             <StyledNavLinkDesktop to={"/"}>
-                <img
-                    src="./assets/logo_mingospace.png"
-                    alt="Mingo Space logo"
-                />
+                <img src="/assets/logo_mingospace.png" alt="Mingo Space logo" />
             </StyledNavLinkDesktop>
             <div>
                 <ul>

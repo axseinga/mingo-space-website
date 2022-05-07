@@ -3,12 +3,18 @@ import { Route, Routes } from "react-router-dom";
 import { HomePage } from "../pages/HomePage/HomePage";
 import { CoursesPage } from "../pages/CoursesPage";
 import { AboutPage } from "../pages/AboutPage";
+import { MandarinCoursePage } from "../pages/courses/Mandarin";
 
 export const PagesRoutes = () => {
     return (
         <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/courses" element={<CoursesPage />} />
+            <Route
+                exact
+                path="/courses/mandarin"
+                element={<MandarinCoursePage />}
+            />
             <Route exact path="/pricing" element={<div>Pricing</div>} />
             <Route exact path="/about" element={<AboutPage />} />
             <Route exact path="/resources" element={<div>Resources</div>} />

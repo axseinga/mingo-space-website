@@ -40,3 +40,16 @@ export const StyledHeader = styled.div`
         }
     }
 `;
+
+export const StyledHeaderFeatureBox = styled.div`
+    & span {
+        padding: 0.3rem 0.5rem;
+        border: 1px solid ${({ theme }) => theme.color.border};
+        font-size: 0.7rem;
+        border-radius: 8px;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+`;

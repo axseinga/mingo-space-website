@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledHeader } from "./pageHeader.styled";
+import { StyledHeader, StyledHeaderFeatureBox } from "./pageHeader.styled";
 import { Button } from "../button/Button";
 
 export const Header = ({ data }) => {
@@ -8,6 +8,14 @@ export const Header = ({ data }) => {
             <div>
                 <h1>{data?.header}</h1>
                 <p dangerouslySetInnerHTML={{ __html: data?.paragraph }}></p>
+                {data?.features && (
+                    <StyledHeaderFeatureBox>
+                        {" "}
+                        {data?.features.map((feature) => (
+                            <span>{feature}</span>
+                        ))}{" "}
+                    </StyledHeaderFeatureBox>
+                )}
                 <Button default big>
                     {data?.btnText}
                 </Button>

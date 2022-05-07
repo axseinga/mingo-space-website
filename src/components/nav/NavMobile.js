@@ -20,7 +20,7 @@ export const NavMobile = () => {
         <StyledNavMobile>
             <div className="NavMobile-nav">
                 <a href="/">
-                    <img src="./assets/logo_mingospace.png" alt="Mingo Space" />
+                    <img src="/assets/logo_mingospace.png" alt="Mingo Space" />
                 </a>
                 <div
                     className="NavMobile-hamburger"

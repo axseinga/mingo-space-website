@@ -6,6 +6,7 @@ export const theme = {
         text: "#333333",
         disabled: "#C4C4C4",
         line: "#C8C9CD",
+        border: "#DFE0E2",
         bg: "#EEF6F3",
         btnDefault: "#FD5C2A",
         btnHover: "#FF5B18",
