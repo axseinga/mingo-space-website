@@ -1,11 +1,9 @@
 import React from "react";
 import { Header } from "../../components/pageHeader/pageHeader";
+import { AboutCourse } from "../../components/aboutCourse/aboutCourse";
 import { TestimonialsSection } from "../../components/testimonials/Testimonials";
 import { RegisterSection } from "../../components/registerBanner/Register";
-import {
-    StyledLanguagePage,
-    StyledLanguagePageAbout,
-} from "./styled/LanguagePage.styled";
+import { StyledLanguagePage } from "./styled/LanguagePage.styled";
 
 export const MandarinCoursePage = () => {
     const headerData = {
@@ -58,17 +56,7 @@ export const MandarinCoursePage = () => {
     return (
         <StyledLanguagePage>
             <Header data={headerData} />
-            <StyledLanguagePageAbout>
-                <div>
-                    <div>
-                        <h3>{aboutData?.title1}</h3>
-                        <p>{aboutData?.paragraph1}</p>
-                        <h3>{aboutData?.title2}</h3>
-                        <p>{aboutData?.paragraph2}</p>
-                    </div>
-                    <img src={aboutData?.img} />
-                </div>
-            </StyledLanguagePageAbout>
+            <AboutCourse data={aboutData} />
             <TestimonialsSection testimonials={testimonialsData} />
             <RegisterSection />
         </StyledLanguagePage>
