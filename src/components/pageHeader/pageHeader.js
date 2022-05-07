@@ -11,8 +11,8 @@ export const Header = ({ data }) => {
                 {data?.features && (
                     <StyledHeaderFeatureBox>
                         {" "}
-                        {data?.features.map((feature) => (
-                            <span>{feature}</span>
+                        {data?.features.map((feature, i) => (
+                            <span key={i}>{feature}</span>
                         ))}{" "}
                     </StyledHeaderFeatureBox>
                 )}

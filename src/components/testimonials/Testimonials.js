@@ -10,7 +10,7 @@ export const TestimonialsSection = ({ testimonials }) => {
             <div>
                 {testimonials.map((t, i) => (
                     <TestimonialCard
-                        key={`${name}_${i}`}
+                        key={i}
                         name={t.name}
                         img={t.img}
                         flag={t.flag}

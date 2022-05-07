@@ -5,7 +5,7 @@ import { CoursesSection } from "../../components/courses/Courses";
 import { ClassesSection } from "./Classes";
 import { TestimonialsSection } from "../../components/testimonials/Testimonials";
 import { FAQ } from "./FAQ";
-import { RegisterSection } from "./Register";
+import { RegisterSection } from "../../components/registerBanner/Register";
 import { theme } from "../../styles/theme";
 
 export const HomePage = () => {
