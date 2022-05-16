@@ -82,14 +82,32 @@ export const MandarinCoursePage = () => {
             langs: ["Mandarin", "English"],
         },
     ];
+    const buyCourseData = {
+        image: "/assets/Pic_PrivateMandarinClassPricing.jpg",
+        header: "Private Mandarin class pricing",
+        subheader: "$25",
+        content: "USD / 1hr class",
+        isDark: false,
+        isCenter: false,
+        isFull: false,
+    };
+    const registerBannerData = {
+        image: "/assets/Pic_ReadytoRegisterCard.jpg",
+        header: "Ready to register?",
+        content: "No payment required now.",
+        isDark: true,
+        isCenter: true,
+        isFull: false,
+    };
     return (
         <StyledLanguagePage>
             <Header data={headerData} />
             <AboutCourse data={aboutData} />
             <TeacherSection teachersData={teachersData} />
             <LevelSection />
+            <RegisterSection data={buyCourseData} />
             <TestimonialsSection testimonials={testimonialsData} />
-            <RegisterSection />
+            <RegisterSection data={registerBannerData} />
         </StyledLanguagePage>
     );
 };

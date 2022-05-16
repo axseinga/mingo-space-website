@@ -1,11 +1,19 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const StyledRegisterSection = styled.section`
-    background-color: ${({ theme }) => theme.color.secondary};
-    color: ${({ theme }) => theme.color.white};
-    text-align: center;
-    padding: 6rem 0;
+    ${(props) =>
+        props.isDark
+            ? css`
+                  background-color: ${({ theme }) => theme.color.secondary};
+                  color: ${({ theme }) => theme.color.white};
+              `
+            : css`
+                  background-color: ${({ theme }) => theme.color.bg};
+                  color: ${({ theme }) => theme.color.text};
+              `}
+    text-align: ${(props) => (props.isCenter ? "center" : "left")};
+    padding: 6rem 2rem;
 
     & img {
         display: none;
@@ -28,6 +36,13 @@ export const StyledRegisterSection = styled.section`
         font-weight: 300;
         font-size: 1rem;
         line-height: 1.4rem;
+
+        & span {
+            font-weight: 700;
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
     }
 `;
 

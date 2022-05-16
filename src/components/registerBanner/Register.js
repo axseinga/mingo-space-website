@@ -5,13 +5,21 @@ import {
 } from "./Register.styled";
 import { Button } from "../button/Button";
 
-export const RegisterSection = () => {
+export const RegisterSection = ({ data }) => {
     return (
-        <StyledRegisterSection>
-            <img src={"/assets/Pic_ReadytoRegisterCard.jpg"} />
+        <StyledRegisterSection
+            isDark={data?.isDark}
+            isCenter={data?.isCenter}
+            isFull={data?.isFull}
+            isLeft={data?.isLeft}
+        >
+            <img src={data?.image} />
             <div>
-                <h2>Ready to register?</h2>
-                <p>No payment required now.</p>
+                <h2>{data?.header}</h2>
+                <p>
+                    <span>{data?.subheader && data?.subheader}</span>
+                    {data?.content}
+                </p>
                 <StyledNavLinkRegister to={"/register"}>
                     <Button type="button" default>
                         Register now

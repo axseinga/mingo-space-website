@@ -77,6 +77,15 @@ export const HomePage = () => {
             review: "“I’ve had a number of lessons with Zhen. He always prepares interesting convo topics beforehand so that I can practice my speaking.”",
         },
     ];
+    const registerBannerData = {
+        image: "/assets/Pic_ReadytoRegisterCard.jpg",
+        header: "Ready to register?",
+        content: "No payment required now.",
+        bgColor: "dark",
+        center: "center",
+        isFull: false,
+        isLeft: true,
+    };
 
     return (
         <StyledHomePage>
@@ -85,7 +94,7 @@ export const HomePage = () => {
             <ClassesSection />
             <TestimonialsSection testimonials={testimonialsSection} />
             <FAQ />
-            <RegisterSection />
+            <RegisterSection data={registerBannerData} />
         </StyledHomePage>
     );
 };
