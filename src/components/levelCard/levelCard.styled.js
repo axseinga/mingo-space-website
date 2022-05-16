@@ -8,4 +8,39 @@ export const StyledLevelCard = styled.div`
     border-radius: 10px;
     height: min-content;
     margin: 2rem 0;
+    padding: 1.5rem;
+    justify-items: center;
+
+    & h3 {
+        font-weight: 700;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+    & ul {
+        margin: 1rem 0;
+        font-weight: 300;
+        font-size: 0.9rem;
+
+        & li {
+            margin: 0.5rem 0;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+            & span {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    & p {
+        line-height: 1.4rem;
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        & span {
+            font-weight: 500;
+        }
+    }
 `;

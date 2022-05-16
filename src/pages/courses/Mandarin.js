@@ -5,6 +5,7 @@ import { TeacherSection } from "../../components/teachersSection/TeachersSection
 import { TestimonialsSection } from "../../components/testimonials/Testimonials";
 import { RegisterSection } from "../../components/registerBanner/Register";
 import { StyledLanguagePage } from "./styled/LanguagePage.styled";
+import { LevelSection } from "../../components/levelSection/levelSection";
 
 export const MandarinCoursePage = () => {
     const headerData = {
@@ -86,6 +87,7 @@ export const MandarinCoursePage = () => {
             <Header data={headerData} />
             <AboutCourse data={aboutData} />
             <TeacherSection teachersData={teachersData} />
+            <LevelSection />
             <TestimonialsSection testimonials={testimonialsData} />
             <RegisterSection />
         </StyledLanguagePage>

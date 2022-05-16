@@ -1,20 +1,25 @@
 import React from "react";
 import { StyledLevelCard } from "./levelCard.styled";
 
-export const LevelCard = () => {
+export const LevelCard = ({ level }) => {
+    console.log(level);
     return (
         <StyledLevelCard>
-            <h3>Beginner</h3>
+            <h3>{level?.level}</h3>
             <ul>
-                <li>
-                    <img src="/assets/icons/bullet-point-green.svg" alt="" />
-                    <span>Self-introductions and greetings</span>
-                </li>
+                {level?.points.map((point) => (
+                    <li>
+                        <img
+                            src={`/assets/icons/bullet-point-${
+                                point?.isActive ? "green" : "grey"
+                            }.svg`}
+                            alt=""
+                        />
+                        <span>{point?.text}</span>
+                    </li>
+                ))}
             </ul>
-            <p>
-                After the beginner curriculum, you may choose to take the HSK 2
-                exam.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: level?.footer }}></p>
         </StyledLevelCard>
     );
 };
