@@ -3,7 +3,7 @@ import { StyledAboutCourse } from "./aboutCourse.styled";
 
 export const AboutCourse = ({ data }) => {
     return (
-        <StyledAboutCourse>
+        <StyledAboutCourse bgColor={data?.bgColor}>
             <div>
                 <div>
                     <h3>{data?.title1}</h3>

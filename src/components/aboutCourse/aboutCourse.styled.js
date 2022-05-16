@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledAboutCourse = styled.section`
     padding: 2rem;
+    background-color: ${(props) => (props.bgColor ? props.bgColor : "white")};
+
     & h3 {
         font-size: 1.2rem;
         font-weight: 700;
