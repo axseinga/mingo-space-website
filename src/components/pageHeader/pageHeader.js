@@ -16,11 +16,13 @@ export const Header = ({ data }) => {
                         ))}{" "}
                     </StyledHeaderFeatureBox>
                 )}
-                <Button default big>
-                    {data?.btnText}
-                </Button>
+                {data?.btnText && (
+                    <Button default big>
+                        {data?.btnText}
+                    </Button>
+                )}
             </div>
-            <img src={data?.img} />
+            {data?.img && <img src={data?.img} />}
         </StyledHeader>
     );
 };
