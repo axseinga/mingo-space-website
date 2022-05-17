@@ -24,24 +24,33 @@ export const StyledRegisterSection = styled.section`
         }
     }
 
-    & h2 {
-        font-family: ${({ theme }) => theme.font.fontLora};
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 2.5rem;
-    }
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
 
-    & p {
-        margin: 1.5rem 0;
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 1.4rem;
+        & h2 {
+            font-family: ${({ theme }) => theme.font.fontLora};
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.5rem;
+        }
 
         & span {
             font-weight: 700;
             font-size: 2rem;
             display: block;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-weight: 300;
+            font-size: 1rem;
+            line-height: 1.4rem;
+
+            & strong {
+                font-weight: 700;
+            }
         }
     }
 `;

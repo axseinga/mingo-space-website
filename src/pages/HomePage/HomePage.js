@@ -81,8 +81,8 @@ export const HomePage = () => {
         image: "/assets/Pic_ReadytoRegisterCard.jpg",
         header: "Ready to register?",
         content: "No payment required now.",
-        bgColor: "dark",
-        center: "center",
+        isDark: true,
+        center: true,
         isFull: false,
         isLeft: true,
     };

@@ -86,7 +86,7 @@ export const MandarinCoursePage = () => {
         image: "/assets/Pic_PrivateMandarinClassPricing.jpg",
         header: "Private Mandarin class pricing",
         subheader: "$25",
-        content: "USD / 1hr class",
+        content: `USD / <strong>1hr</strong> class`,
         isDark: false,
         isCenter: false,
         isFull: false,
