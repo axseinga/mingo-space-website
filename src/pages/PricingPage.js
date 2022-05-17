@@ -3,6 +3,7 @@ import { StyledPricingPage } from "./styled/PricingPage.styled";
 import { Header } from "../components/pageHeader/pageHeader";
 import { PriceCard } from "../components/priceCard/priceCard";
 import { RegisterSection } from "../components/registerBanner/Register";
+import { PoliciesSection } from "../components/policiesSection/PoliciesSection";
 
 export const PricingPage = () => {
     const headerSection = {
@@ -36,6 +37,26 @@ export const PricingPage = () => {
         isCenter: true,
         isFull: false,
     };
+    const policiesData = [
+        {
+            icon: "/assets/icons/icon_payment_method.png",
+            title: "Payment Method",
+            content:
+                "We accept PayPal, debit, credit card (includes 3% surcharge). Bank transfer within Malaysia and Singapore is also accepted and excludes surcharge.",
+        },
+        {
+            icon: "/assets/icons/icon_reservation.png",
+            title: "Reservations",
+            content:
+                "Classes will be scheduled based on student and teacher availabilities. We have teachers that can accomodate for all time zones, 7 days a week.",
+        },
+        {
+            icon: "/assets/icons/icon_refunds.png",
+            title: "Cancellations & Refunds",
+            content:
+                "Please contact us at least one day before your lesson if you need to cancel. If cancelled less than 24 hours before, lesson fees will not be refunded.",
+        },
+    ];
     return (
         <StyledPricingPage>
             <Header data={headerSection} />
@@ -43,6 +64,7 @@ export const PricingPage = () => {
                 <PriceCard data={price} />
             ))}
             <RegisterSection data={registerBannerData} />
+            <PoliciesSection data={policiesData} />
         </StyledPricingPage>
     );
 };
