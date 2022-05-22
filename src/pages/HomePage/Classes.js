@@ -1,5 +1,10 @@
 import React from "react";
-import { StyledClassesSection } from "../styled/HomePage.styled";
+import {
+    StyledClassesSection,
+    StyledClassesItems,
+    StyledClassesItem,
+    StyledClassesContent,
+} from "../styled/HomePage.styled";
 
 export const ClassesSection = () => {
     const classes = [
@@ -25,17 +30,17 @@ export const ClassesSection = () => {
     return (
         <StyledClassesSection>
             <h2>Personalized 1:1 online classes</h2>
-            <div>
+            <StyledClassesItems>
                 {classes.map((cl, i) => (
-                    <div key={i}>
-                        <div>
+                    <StyledClassesItem key={i}>
+                        <StyledClassesContent>
                             <h3>{cl.title}</h3>
                             <p>{cl.paragraph}</p>
-                        </div>
+                        </StyledClassesContent>
                         <img src={`./assets/${cl.img}`} />
-                    </div>
+                    </StyledClassesItem>
                 ))}
-            </div>
+            </StyledClassesItems>
         </StyledClassesSection>
     );
 };

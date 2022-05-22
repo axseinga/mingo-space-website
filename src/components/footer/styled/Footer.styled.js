@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { BREAKPOINT_MOBILE } from "../../../styles/breakpoints";
+import {
+    BREAKPOINT_MOBILE,
+    BREAKPOINT_TABLET,
+} from "../../../styles/breakpoints";
 
 export const StyledFooter = styled.footer`
     width: 100%;
@@ -14,14 +17,20 @@ export const StyledFooter = styled.footer`
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         padding: 3rem;
         display: flex;
-        gap: 4rem;
+        gap: 5rem;
     }
 
-    h4 + div {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        width: 100%;
     }
+`;
+
+export const StyledFooterSocials = styled.div``;
+
+export const StyledFooterIcons = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
 
     .Footer-icon {
         color: ${({ theme }) => theme.color.white};

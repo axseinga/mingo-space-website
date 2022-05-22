@@ -1,8 +1,12 @@
 import styled from "styled-components";
-import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
+import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledTestimonialsSection = styled.section`
     margin: 1rem 2rem;
+
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        text-align: center;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -30,6 +34,10 @@ export const StyledTestimonialsSection = styled.section`
             grid-template-rows: auto;
             gap: 2rem;
             margin-bottom: 1rem;
+        }
+
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 `;

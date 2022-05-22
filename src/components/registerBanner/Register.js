@@ -1,20 +1,19 @@
 import React from "react";
 import {
     StyledRegisterSection,
+    StyledRegisterBannerContent,
     StyledNavLinkRegister,
 } from "./Register.styled";
 import { Button } from "../button/Button";
 
 export const RegisterSection = ({ data }) => {
     return (
-        <StyledRegisterSection
-            isDark={data?.isDark}
-            isCenter={data?.isCenter}
-            isFull={data?.isFull}
-            isLeft={data?.isLeft}
-        >
+        <StyledRegisterSection isFull={data?.isFull} isLeft={data?.isLeft}>
             <img src={data?.image} />
-            <div>
+            <StyledRegisterBannerContent
+                isDark={data?.isDark}
+                isCenter={data?.isCenter}
+            >
                 <h2>{data?.header}</h2>
                 {data?.subheader && <span>{data?.subheader}</span>}
                 <p dangerouslySetInnerHTML={{ __html: data?.content }}></p>
@@ -23,7 +22,7 @@ export const RegisterSection = ({ data }) => {
                         Register now
                     </Button>
                 </StyledNavLinkRegister>
-            </div>
+            </StyledRegisterBannerContent>
         </StyledRegisterSection>
     );
 };

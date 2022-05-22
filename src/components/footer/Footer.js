@@ -1,5 +1,9 @@
 import React from "react";
-import { StyledFooter } from "./styled/Footer.styled";
+import {
+    StyledFooter,
+    StyledFooterSocials,
+    StyledFooterIcons,
+} from "./styled/Footer.styled";
 import { FooterLinks } from "./FooterLinks";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
@@ -33,17 +37,17 @@ export const Footer = () => {
     ];
     return (
         <StyledFooter>
-            <div>
+            <StyledFooterSocials>
                 <h4>MingoSpace</h4>
-                <div>
+                <StyledFooterIcons>
                     <a href="https://www.facebook.com/mingospace">
                         <FaFacebookF className="Footer-icon" />
                     </a>
                     <a href="https://www.instagram.com/mingospace/">
                         <FaInstagram className="Footer-icon" />
                     </a>
-                </div>
-            </div>
+                </StyledFooterIcons>
+            </StyledFooterSocials>
             {footerLinks.map((fl, i) => (
                 <FooterLinks
                     key={`${fl}_${i}`}

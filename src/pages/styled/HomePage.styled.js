@@ -1,9 +1,15 @@
 import styled from "styled-components";
+import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledHomePage = styled.div``;
 
 export const StyledClassesSection = styled.section`
     padding: 2rem;
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        margin: 0 auto;
+        width: 70%;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -12,8 +18,36 @@ export const StyledClassesSection = styled.section`
         font-weight: 700;
         line-height: 2.5rem;
         margin-bottom: 2rem;
-    }
 
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            text-align: center;
+        }
+    }
+`;
+
+export const StyledClassesItems = styled.div`
+    display: grid;
+`;
+
+export const StyledClassesItem = styled.div`
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        display: flex;
+        gap: 2rem;
+    }
+    & img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+        box-shadow: ${({ theme }) => theme.shadow};
+
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            max-width: 50%;
+            order: -1;
+        }
+    }
+`;
+
+export const StyledClassesContent = styled.div`
     & h3 {
         font-size: 1.2rem;
         font-weight: 700;
@@ -28,18 +62,16 @@ export const StyledClassesSection = styled.section`
         font-size: 1.1rem;
         line-height: 1.4rem;
     }
-
-    & img {
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 2rem;
-        box-shadow: ${({ theme }) => theme.shadow};
-    }
 `;
 
 export const StyledFAQSection = styled.section`
     padding: 2rem;
     background-color: ${({ theme }) => theme.color.bg};
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        padding-right: 20rem;
+        padding-left: 20rem;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -48,6 +80,10 @@ export const StyledFAQSection = styled.section`
         font-weight: 700;
         line-height: 2.5rem;
         margin-top: 2rem;
+
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            text-align: center;
+        }
     }
 
     & > div {
