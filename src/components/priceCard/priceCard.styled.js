@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledPriceCard = styled.div`
     display: flex;
@@ -14,7 +15,12 @@ export const StyledPriceCard = styled.div`
     margin: 2rem;
     gap: 1.2rem;
     padding: 3rem 2rem;
-    max-width: 350px;
+    max-width: 330px;
+    height: 270px;
+
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        margin: 0.5rem;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontPoppins};

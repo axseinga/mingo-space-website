@@ -16,7 +16,7 @@ export const RegisterSection = ({ data }) => {
             <img src={data?.image} />
             <div>
                 <h2>{data?.header}</h2>
-                <span>{data?.subheader && data?.subheader}</span>
+                {data?.subheader && <span>{data?.subheader}</span>}
                 <p dangerouslySetInnerHTML={{ __html: data?.content }}></p>
                 <StyledNavLinkRegister to={"/register"}>
                     <Button type="button" default>

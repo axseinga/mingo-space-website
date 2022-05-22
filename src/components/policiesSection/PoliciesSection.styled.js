@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledPoliciesSection = styled.section`
     padding: 2rem;
@@ -17,5 +18,14 @@ export const StyledPoliciesSection = styled.section`
         font-weight: 300;
         font-size: 1.1rem;
         line-height: 1.4rem;
+    }
+
+    & > div {
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 1rem;
+        }
     }
 `;

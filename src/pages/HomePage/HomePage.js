@@ -82,7 +82,7 @@ export const HomePage = () => {
         header: "Ready to register?",
         content: "No payment required now.",
         isDark: true,
-        center: true,
+        isCenter: true,
         isFull: false,
         isLeft: true,
     };

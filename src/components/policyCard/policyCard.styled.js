@@ -1,15 +1,21 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledPolicyCard = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px solid ${({ theme }) => theme.color.border};
     border-radius: 10px;
-    height: min-content;
     margin: 2rem 0;
     padding: 2.5rem 1.5rem;
     justify-items: center;
     gap: 1rem;
+    max-width: 330px;
+    height: 270px;
+
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        margin: 0.5rem;
+    }
 
     & img {
         width: 1.8rem;

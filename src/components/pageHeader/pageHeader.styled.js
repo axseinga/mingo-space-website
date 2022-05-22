@@ -13,8 +13,10 @@ export const StyledHeader = styled.div`
     }
 
     & div {
-        display: flex;
-        flex-direction: column;
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            display: flex;
+            flex-direction: column;
+        }
 
         & h1 {
             font-family: ${({ theme }) => theme.font.fontLora};

@@ -1,5 +1,8 @@
 import React from "react";
-import { StyledPricingPage } from "./styled/PricingPage.styled";
+import {
+    StyledPricingPage,
+    StyledPricingCards,
+} from "./styled/PricingPage.styled";
 import { Header } from "../components/pageHeader/pageHeader";
 import { PriceCard } from "../components/priceCard/priceCard";
 import { RegisterSection } from "../components/registerBanner/Register";
@@ -60,9 +63,11 @@ export const PricingPage = () => {
     return (
         <StyledPricingPage>
             <Header data={headerSection} />
-            {pricingData?.map((price) => (
-                <PriceCard data={price} />
-            ))}
+            <StyledPricingCards>
+                {pricingData?.map((price) => (
+                    <PriceCard data={price} />
+                ))}
+            </StyledPricingCards>
             <RegisterSection data={registerBannerData} />
             <PoliciesSection data={policiesData} />
         </StyledPricingPage>

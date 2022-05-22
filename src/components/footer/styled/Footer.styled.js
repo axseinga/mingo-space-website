@@ -14,7 +14,7 @@ export const StyledFooter = styled.footer`
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         padding: 3rem;
         display: flex;
-        gap: 7rem;
+        gap: 4rem;
     }
 
     h4 + div {

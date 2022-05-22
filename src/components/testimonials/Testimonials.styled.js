@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledTestimonialsSection = styled.section`
-    padding: 2rem;
+    margin: 1rem 2rem;
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -16,5 +17,19 @@ export const StyledTestimonialsSection = styled.section`
         font-weight: 300;
         font-size: 1.1rem;
         line-height: 1.4rem;
+    }
+
+    & > div {
+        display: grid;
+        place-items: center;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
     }
 `;

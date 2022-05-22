@@ -3,25 +3,20 @@ import { NavLink } from "react-router-dom";
 import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledRegisterSection = styled.section`
-    ${(props) =>
-        props.isDark
-            ? css`
-                  background-color: ${({ theme }) => theme.color.secondary};
-                  color: ${({ theme }) => theme.color.white};
-              `
-            : css`
-                  background-color: ${({ theme }) => theme.color.bg};
-                  color: ${({ theme }) => theme.color.text};
-              `}
-    text-align: ${(props) => (props.isCenter ? "center" : "left")};
-    padding: 6rem 2rem;
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        ${(props) =>
+            !props.isFull &&
+            css`
+                margin: 1rem 2rem;
+            `};
+    }
 
     & img {
         display: none;
         @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
             display: block;
-            width: 90%;
-            object-fit: cover;
+            width: 100%;
+            object-fit: contain;
         }
     }
 
@@ -29,6 +24,26 @@ export const StyledRegisterSection = styled.section`
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
+        text-align: ${(props) => (props.isCenter ? "center" : "left")};
+        padding: 6rem 2rem;
+
+        ${(props) =>
+            props.isCenter &&
+            css`
+                align-items: center;
+                justify-content: center;
+            `}
+
+        ${(props) =>
+            props.isDark
+                ? css`
+                      background-color: ${({ theme }) => theme.color.secondary};
+                      color: ${({ theme }) => theme.color.white};
+                  `
+                : css`
+                      background-color: ${({ theme }) => theme.color.bg};
+                      color: ${({ theme }) => theme.color.text};
+                  `}
 
         & h2 {
             font-family: ${({ theme }) => theme.font.fontLora};
