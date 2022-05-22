@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledRegisterSection = styled.section`
     ${(props) =>
@@ -17,7 +18,7 @@ export const StyledRegisterSection = styled.section`
 
     & img {
         display: none;
-        @media only screen and (min-width: 37.5em) {
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
             display: block;
             width: 90%;
             object-fit: cover;

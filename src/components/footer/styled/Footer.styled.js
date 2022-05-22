@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE } from "../../../styles/breakpoints";
 
 export const StyledFooter = styled.footer`
     width: 100%;
@@ -10,7 +11,7 @@ export const StyledFooter = styled.footer`
     gap: 2rem;
     margin: 0 auto;
 
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         padding: 3rem;
         display: flex;
         gap: 7rem;

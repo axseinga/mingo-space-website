@@ -15,7 +15,7 @@ export const HomePage = () => {
     price for both adults and kids.`,
         btnText: "Register now",
         btnHref: "/register",
-        img: "./assets/Pic_Practicelanguageskills1.jpg",
+        img: "./assets/Hero_Image_Zoom_call.png",
     };
 
     const coursesSection = {
