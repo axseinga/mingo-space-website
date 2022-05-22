@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
 
 export const StyledTeacherCard = styled.div`
     display: flex;
@@ -8,6 +9,12 @@ export const StyledTeacherCard = styled.div`
     border-radius: 10px;
     height: min-content;
     margin: 2rem 0;
+    width: 70%;
+
+    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        flex-direction: row;
+        width: 100%;
+    }
 
     & img {
         width: 100%;
@@ -15,6 +22,12 @@ export const StyledTeacherCard = styled.div`
         object-fit: scale-down;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            width: 40%;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 10px;
+        }
     }
 
     & > div {

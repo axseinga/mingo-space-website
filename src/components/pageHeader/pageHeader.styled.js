@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { BREAKPOINT_MOBILE } from "../../styles/breakpoints";
+import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledHeader = styled.div`
-    padding: 1rem 2rem;
+    margin: 2rem;
 
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         display: flex;
@@ -12,11 +12,19 @@ export const StyledHeader = styled.div`
         gap: 1rem;
     }
 
-    & div {
-        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
-            display: flex;
-            flex-direction: column;
-        }
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 5rem;
+        place-items: center;
+        gap: 0;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
 
         & h1 {
             font-family: ${({ theme }) => theme.font.fontLora};
@@ -24,10 +32,13 @@ export const StyledHeader = styled.div`
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 3.5rem;
+
+            @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+                width: 70%;
+            }
         }
 
         & p {
-            margin: 1rem 0;
             width: 90%;
             font-weight: 300;
             font-size: 1.4rem;
@@ -39,10 +50,11 @@ export const StyledHeader = styled.div`
         }
 
         & button {
-            margin-top: 1.5rem;
-
             @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
                 align-self: center;
+            }
+            @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+                align-self: flex-start;
             }
         }
     }
@@ -53,16 +65,23 @@ export const StyledHeader = styled.div`
             display: block;
             width: 90%;
             object-fit: contain;
+            margin: 1rem 0;
+        }
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            width: 100%;
         }
     }
 `;
 
 export const StyledHeaderFeatureBox = styled.div`
+    display: flex;
+    width: 100%;
     & span {
         padding: 0.3rem 0.5rem;
         border: 1px solid ${({ theme }) => theme.color.border};
         font-size: 0.7rem;
         border-radius: 8px;
+        width: max-content;
 
         &:first-child {
             margin-right: 10px;

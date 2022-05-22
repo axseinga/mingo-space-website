@@ -17,4 +17,10 @@ export const StyledTeachersSection = styled.section`
         font-size: 1.1rem;
         line-height: 1.4rem;
     }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;

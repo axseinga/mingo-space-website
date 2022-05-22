@@ -7,7 +7,6 @@ export const Header = ({ data }) => {
         <StyledHeader>
             <div>
                 <h1>{data?.header}</h1>
-                <p dangerouslySetInnerHTML={{ __html: data?.paragraph }}></p>
                 {data?.features && (
                     <StyledHeaderFeatureBox>
                         {" "}
@@ -16,6 +15,7 @@ export const Header = ({ data }) => {
                         ))}{" "}
                     </StyledHeaderFeatureBox>
                 )}
+                <p dangerouslySetInnerHTML={{ __html: data?.paragraph }}></p>
                 {data?.btnText && (
                     <Button default big>
                         {data?.btnText}

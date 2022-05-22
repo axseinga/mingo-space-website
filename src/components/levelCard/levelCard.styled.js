@@ -6,10 +6,11 @@ export const StyledLevelCard = styled.div`
     border: 1px solid ${({ theme }) => theme.color.border};
     background-color: ${({ theme }) => theme.color.white};
     border-radius: 10px;
-    height: min-content;
     margin: 2rem 0;
     padding: 1.5rem;
     justify-items: center;
+    max-width: 330px;
+    height: min-content;
 
     & h3 {
         font-weight: 700;
