@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledLevelSection = styled.section`
-    padding: 2rem;
+    margin: 2rem 5rem;
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        text-align: center;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -22,5 +27,14 @@ export const StyledLevelSection = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            margin: 0 auto;
+        }
     }
 `;

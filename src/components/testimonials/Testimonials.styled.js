@@ -4,7 +4,7 @@ import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 export const StyledTestimonialsSection = styled.section`
     margin: 1rem 2rem;
 
-    @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
         text-align: center;
     }
 
