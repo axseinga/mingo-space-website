@@ -1,5 +1,8 @@
 import React from "react";
-import { StyledTeachersSection } from "./TeachersSection.styled";
+import {
+    StyledTeachersSection,
+    StyledTeachersCards,
+} from "./TeachersSection.styled";
 import { TeacherCard } from "../teacherCard/TeacherCard";
 
 export const TeacherSection = ({ teachersData }) => {
@@ -12,11 +15,11 @@ export const TeacherSection = ({ teachersData }) => {
                 will email you to choose from the teachers that best match your
                 availabilities.{" "}
             </p>
-            <div>
+            <StyledTeachersCards>
                 {teachersData.map((teacher) => (
                     <TeacherCard key={teacher.name} teacher={teacher} />
                 ))}
-            </div>
+            </StyledTeachersCards>
         </StyledTeachersSection>
     );
 };

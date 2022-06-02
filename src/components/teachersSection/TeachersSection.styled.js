@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledTeachersSection = styled.section`
-    padding: 2rem;
+    margin: 2rem;
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        margin: 2rem 5rem;
+    }
 
     & h2 {
         font-family: ${({ theme }) => theme.font.fontLora};
@@ -9,6 +14,10 @@ export const StyledTeachersSection = styled.section`
         font-size: 2rem;
         font-weight: 700;
         line-height: 2.5rem;
+
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            text-align: center;
+        }
     }
 
     & > p {
@@ -16,11 +25,21 @@ export const StyledTeachersSection = styled.section`
         font-weight: 300;
         font-size: 1.1rem;
         line-height: 1.4rem;
-    }
 
-    & > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+            text-align: center;
+        }
+    }
+`;
+
+export const StyledTeachersCards = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
     }
 `;

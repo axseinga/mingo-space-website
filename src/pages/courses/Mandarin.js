@@ -24,7 +24,7 @@ export const MandarinCoursePage = () => {
         title2: "Interactive 1:1 Zoom classes with a native teacher",
         paragraph2:
             "Practice speaking, listening, reading, and writing with a native-speaking Mandarin teacher. All of our teachers are also experienced with teaching Mandarin.",
-        bgColor: "#EEF0F1",
+        bgColor: true,
     };
     const testimonialsData = [
         {
