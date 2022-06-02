@@ -5,6 +5,7 @@ import { CoursesPage } from "../pages/CoursesPage";
 import { AboutPage } from "../pages/AboutPage";
 import { PricingPage } from "../pages/PricingPage";
 import { MandarinCoursePage } from "../pages/courses/Mandarin";
+import { RegisterPage } from "../pages/RegistrationPage";
 
 export const PagesRoutes = () => {
     return (
@@ -20,7 +21,7 @@ export const PagesRoutes = () => {
             <Route exact path="/about" element={<AboutPage />} />
             <Route exact path="/resources" element={<div>Resources</div>} />
             <Route exact path="/contact" element={<div>Contact</div>} />
-            <Route exact path="/register" element={<div>Registration</div>} />
+            <Route exact path="/register" element={<RegisterPage />} />
         </Routes>
     );
 };
