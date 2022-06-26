@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledTextarea = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 
     & label {
         margin-bottom: 10px;

@@ -4,6 +4,7 @@ import { Input } from "../form/Input/Input";
 import { Textarea } from "../form/textarea/Textarea";
 import { DropdownWithInput } from "../form/dropdownWithInput/DropdownWithInput";
 import { Dropdown } from "../form/Dropdown/Dropdown";
+import { ChoiceInput } from "../form/ChoiceInput/ChoiceInput";
 import { Button } from "../button/Button";
 
 export const RegisterForm = () => {
@@ -28,6 +29,16 @@ export const RegisterForm = () => {
                     inputLabel="Phone Number"
                 />
             </RowWrapper>
+            <ChoiceInput
+                type="checkbox"
+                label={"Which language(s) would you like to take?"}
+                options={["Mandarin", "Japanese", "Malay"]}
+            />
+            <ChoiceInput
+                type="checkbox"
+                label={"Adult or kid class?"}
+                options={["Adult", "Kid"]}
+            />
             <Dropdown
                 label="Time zone"
                 placeholder="Select one"

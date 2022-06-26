@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BREAKPOINT_TABLET } from "../../../styles/breakpoints";
 
 export const StyledDropdownWithInput = styled.div`
+    margin: 0.5rem 0;
     @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
         transform: translateY(5px);
     }

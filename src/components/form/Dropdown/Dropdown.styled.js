@@ -5,6 +5,7 @@ export const StyledDropdown = styled.div`
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
+    margin: 0.5rem 0;
 
     & p {
         margin-bottom: 10px;

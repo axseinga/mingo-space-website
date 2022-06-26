@@ -1,11 +1,18 @@
 import React from "react";
-import { StyledInput } from "./Input.styled";
+import { StyledChoiceInput, StyledOption } from "./ChoiceInput.styled";
 
-export const Input = ({ name, label }) => {
+export const ChoiceInput = ({ type, label, options }) => {
     return (
-        <StyledInput>
-            <label htmlFor={name}>{label}</label>
-            <input id={name} name={name} placeholder={label} />
-        </StyledInput>
+        <StyledChoiceInput>
+            <p>{label}</p>
+            <div>
+                {options?.map((o) => (
+                    <StyledOption key={o}>
+                        <input type={type} id={o} name={o} value={o} />
+                        <label for={o}>{o}</label>
+                    </StyledOption>
+                ))}
+            </div>
+        </StyledChoiceInput>
     );
 };
