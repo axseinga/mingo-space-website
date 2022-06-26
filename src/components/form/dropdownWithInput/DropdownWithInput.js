@@ -37,7 +37,10 @@ export const DropdownWithInput = ({
                                 fallback={<span>Unknown</span>}
                                 height="16"
                             />
-                            <img src="/assets/icons/arrow-dropdown.svg" />
+                            <img
+                                src="/assets/icons/arrow-dropdown.svg"
+                                alt="Open dropdown"
+                            />
                         </button>
                         {isVisible === false ? (
                             ""

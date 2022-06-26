@@ -14,7 +14,11 @@ export const Dropdown = ({ label, placeholder, options }) => {
                         setIsVisible(!isVisible);
                     }}
                 >
-                    {placeholder} <span>v</span>
+                    {placeholder}{" "}
+                    <img
+                        src="/assets/icons/keyboard-arrow-down.svg"
+                        alt="Open dropdown"
+                    />
                 </button>
                 {isVisible === false ? (
                     ""

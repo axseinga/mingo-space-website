@@ -1,6 +1,10 @@
 import styled from "styled-components";
+import { BREAKPOINT_TABLET } from "../../../styles/breakpoints";
 
 export const StyledDropdownWithInput = styled.div`
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+        transform: translateY(5px);
+    }
     & label {
         margin-bottom: 10px;
         font-weight: 700;
@@ -21,6 +25,8 @@ export const StyledDropdownInner = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
+    z-index: 10;
+    position: relative;
     margin: 1rem 0;
     & button {
         background-color: ${({ theme }) => theme.color.white};
@@ -46,7 +52,9 @@ export const ButtonWrapper = styled.div`
     }
 `;
 
-export const StyledFlagInput = styled.div``;
+export const StyledFlagInput = styled.div`
+    z-index: 10;
+`;
 
 export const DropdownOptions = styled.div`
     display: flex;

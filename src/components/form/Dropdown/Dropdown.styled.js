@@ -4,9 +4,7 @@ export const StyledDropdown = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-self: flex-end;
-    align-self: end;
 
     & p {
         margin-bottom: 10px;
@@ -19,7 +17,7 @@ export const StyledDropdown = styled.div`
         justify-content: space-between;
 
         width: 100%;
-        height: 42px;
+        height: 52px;
         padding: 1rem 1.5rem;
         border: 1px solid ${({ theme }) => theme.color.line};
         border-radius: 10px;
@@ -29,7 +27,6 @@ export const StyledDropdown = styled.div`
 
         cursor: pointer;
         &:hover {
-            background-color: ${({ theme }) => theme.color.btnDefault};
         }
     }
     & > div div {
@@ -46,7 +43,7 @@ export const StyledDropdown = styled.div`
             display: block;
             cursor: pointer;
             &:hover {
-                background-color: ${({ theme }) => theme.color.line};
+                color: ${({ theme }) => theme.color.btnHover};
             }
         }
     }
