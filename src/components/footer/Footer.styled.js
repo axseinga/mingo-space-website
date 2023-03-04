@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {
     BREAKPOINT_MOBILE,
     BREAKPOINT_TABLET,
-} from "../../../styles/breakpoints";
+} from "../../styles/breakpoints";
 
 export const StyledFooter = styled.footer`
     width: 100%;
