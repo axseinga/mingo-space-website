@@ -15,7 +15,7 @@ export const CoursesSubpage = () => {
       <Header data={language.header} />
       <AboutCourse data={language.about} />
       <TeachersSection data={language.teachers} />
-      <LevelSection />
+      <LevelSection data={language.levels}/>
       <RegisterSection data={language.buyCourses} />
       <TestimonialsSection data={language.testimonials} />
       <RegisterSection data={language.registerBanner} />

@@ -204,6 +204,49 @@ export const coursesSubpagesConfig = {
         "Practice speaking, listening, reading, and writing with a native-speaking Mandarin teacher. All of our teachers are also experienced with teaching Mandarin.",
       bgColor: true,
     },
+    levels: {
+      header: "What you’ll learn in our Mandarin classes",
+      description:
+        "This curriculum overview is just for guidance and can be adapted to meet your language needs and interests. After you register, we will also conduct a free 15-minute assessment to get to know you and determine your language level before your first class.",
+      items: [
+        {
+          level: "Beginner",
+          points: [
+            { text: "Self-introductions and greetings", isActive: true },
+            { text: "Discuss daily topics", isActive: true },
+            { text: "Read and comprehend passages", isActive: false },
+            { text: "Talk about the past and future", isActive: false },
+            { text: "Chinese idioms and culture", isActive: false },
+            { text: "Speak Chinese fluently", isActive: false },
+          ],
+          footer: `After the beginner curriculum, you may choose to take the <span> HSK 2 exam.</span>`,
+        },
+        {
+          level: "Intermediate",
+          points: [
+            { text: "Self-introductions and greetings", isActive: true },
+            { text: "Discuss daily topics", isActive: true },
+            { text: "Read and comprehend passages", isActive: true },
+            { text: "Talk about the past and future", isActive: true },
+            { text: "Chinese idioms and culture", isActive: false },
+            { text: "Speak Chinese fluently", isActive: false },
+          ],
+          footer: `After the beginner curriculum, you may choose to take the <span> HSK 4 exam.</span>`,
+        },
+        {
+          level: "Advanced",
+          points: [
+            { text: "Self-introductions and greetings", isActive: true },
+            { text: "Discuss daily topics", isActive: true },
+            { text: "Read and comprehend passages", isActive: true },
+            { text: "Talk about the past and future", isActive: true },
+            { text: "Chinese idioms and culture", isActive: true },
+            { text: "Speak Chinese fluently", isActive: true },
+          ],
+          footer: `After the beginner curriculum, you may choose to take the <span> HSK 6 exam.</span>`,
+        },
+      ],
+    },
     testimonials: [
       {
         name: "Rina",

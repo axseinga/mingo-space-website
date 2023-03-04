@@ -108,6 +108,7 @@ export const NavMenu = styled.div`
         background-color: ${({ theme }) => theme.color.white};
         text-align: center;
         justify-content: center;
+        z-index: 99;
 
         & ul {
           & li {
