@@ -1,12 +1,12 @@
 import React from "react";
 import { StyledLayout } from "./Layout.styled";
-import { NavMobile } from "../nav/NavMobile";
+import { Nav } from "../nav/Nav";
 import { Footer } from "../footer/Footer";
 
 export const Layout = ({ children }) => {
   return (
     <StyledLayout>
-      <NavMobile />
+      <Nav />
       <main>{children}</main>
       <Footer />
     </StyledLayout>
