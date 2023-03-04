@@ -1,60 +1,30 @@
 import React from "react";
 import {
-    StyledFooter,
-    StyledFooterSocials,
-    StyledFooterIcons,
-} from "./styled/Footer.styled";
+  StyledFooter,
+  StyledFooterSocials,
+  StyledFooterIcons,
+} from "./Footer.styled";
 import { FooterLinks } from "./FooterLinks";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { footerConfig } from "../../@config/config";
 
 export const Footer = () => {
-    const footerLinks = [
-        {
-            title: "Courses",
-            links: [
-                { text: "Mandarin", href: "/courses/mandarin" },
-                { text: "Malay", href: "/courses/malay" },
-                { text: "Japanese", href: "/courses/japanese" },
-                { text: "Kids course", href: "/courses/kidscourse" },
-            ],
-        },
-        {
-            title: "Quick Links",
-            links: [
-                { text: "Sign up", href: "/register" },
-                { text: "Pricing", href: "/pricing" },
-                { text: "Contact", href: "/contact" },
-            ],
-        },
-        {
-            title: "About",
-            links: [
-                { text: "About us", href: "/about" },
-                { text: "Our teachers", href: "/" },
-                { text: "FAQ", href: "/contact" },
-            ],
-        },
-    ];
-    return (
-        <StyledFooter>
-            <StyledFooterSocials>
-                <h4>MingoSpace</h4>
-                <StyledFooterIcons>
-                    <a href="https://www.facebook.com/mingospace">
-                        <FaFacebookF className="Footer-icon" />
-                    </a>
-                    <a href="https://www.instagram.com/mingospace/">
-                        <FaInstagram className="Footer-icon" />
-                    </a>
-                </StyledFooterIcons>
-            </StyledFooterSocials>
-            {footerLinks.map((fl, i) => (
-                <FooterLinks
-                    key={`${fl}_${i}`}
-                    title={fl.title}
-                    links={fl.links}
-                />
-            ))}
-        </StyledFooter>
-    );
+  return (
+    <StyledFooter>
+      <StyledFooterSocials>
+        <h4>{footerConfig.header}</h4>
+        <StyledFooterIcons>
+          <a href="https://www.facebook.com/mingospace">
+            <FaFacebookF className="Footer-icon" />
+          </a>
+          <a href="https://www.instagram.com/mingospace/">
+            <FaInstagram className="Footer-icon" />
+          </a>
+        </StyledFooterIcons>
+      </StyledFooterSocials>
+      {footerConfig.links.map((fl, i) => (
+        <FooterLinks key={`${fl}_${i}`} title={fl.title} links={fl.links} />
+      ))}
+    </StyledFooter>
+  );
 };

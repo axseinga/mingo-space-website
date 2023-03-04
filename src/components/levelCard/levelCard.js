@@ -6,8 +6,8 @@ export const LevelCard = ({ level }) => {
         <StyledLevelCard>
             <h3>{level?.level}</h3>
             <ul>
-                {level?.points.map((point) => (
-                    <li key={point.level}>
+                {level?.points.map((point, i) => (
+                    <li key={i}>
                         <img
                             src={`/assets/icons/bullet-point-${
                                 point?.isActive ? "green" : "grey"
