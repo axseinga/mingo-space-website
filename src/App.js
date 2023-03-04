@@ -9,6 +9,7 @@ import { NavDesktop } from "./components/nav/NavDesktop";
 import { NavMobile } from "./components/nav/NavMobile";
 import { Footer } from "./components/footer/Footer";
 import { BackLink } from "./components/backlink/BackLink";
+import { Layout } from "./components/layout/Layout";
 
 const App = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -26,9 +27,9 @@ const App = () => {
       <StyledApp>
         <GlobalStyle />
         <BrowserRouter>
-          {width > breakPoint ? <NavDesktop /> : <NavMobile />}
-          <PagesRoutes />
-          <Footer />
+          <Layout>
+            <PagesRoutes />
+          </Layout>
           <BackLink />
         </BrowserRouter>
       </StyledApp>
