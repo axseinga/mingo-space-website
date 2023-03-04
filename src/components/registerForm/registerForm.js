@@ -5,6 +5,7 @@ import { Textarea } from "../form/textarea/Textarea";
 import { DropdownWithInput } from "../form/dropdownWithInput/DropdownWithInput";
 import { Dropdown } from "../form/Dropdown/Dropdown";
 import { ChoiceInput } from "../form/ChoiceInput/ChoiceInput";
+import { CalendarInput } from "../form/CalendarInput/CalendarInput";
 import { Button } from "../button/Button";
 
 export const RegisterForm = () => {
@@ -46,6 +47,10 @@ export const RegisterForm = () => {
                     "+00:00 (GMT) Western Europe Time, London, Lisbon, Casablanca",
                     "+08:00 (GMT +8:00) Beijing, Perth, Singapore, Hong Kong",
                 ]}
+            />
+            <CalendarInput
+                label="Days available"
+                options={["M", "Tu", "W", "Th", "F", "Sa", "Su"]}
             />
             <Textarea
                 name="question"
