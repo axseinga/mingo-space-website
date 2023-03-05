@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledHeader = styled.div`
-    margin: 2rem;
+    margin: 0 2rem;
 
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         display: flex;

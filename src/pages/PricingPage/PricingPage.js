@@ -7,6 +7,7 @@ import { PoliciesSection } from "../../components/policiesSection/PoliciesSectio
 import { pricingPageConfig } from "../../@config/config";
 
 export const PricingPage = () => {
+  console.log(pricingPageConfig)
   return (
     <StyledPricingPage>
       <Header data={pricingPageConfig.headerSection} />
@@ -16,7 +17,7 @@ export const PricingPage = () => {
         ))}
       </StyledPricingCards>
       <RegisterSection data={pricingPageConfig.registerBanner} />
-      <PoliciesSection data={pricingPageConfig.policies} />
+      <PoliciesSection data={pricingPageConfig.policy} />
     </StyledPricingPage>
   );
 };

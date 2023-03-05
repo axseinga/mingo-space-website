@@ -7,11 +7,9 @@ export const StyledPolicyCard = styled.div`
     border: 1px solid ${({ theme }) => theme.color.border};
     border-radius: 10px;
     margin: 2rem 0;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 2rem;
     justify-items: center;
     gap: 1rem;
-    max-width: 330px;
-    height: 270px;
 
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         margin: 0.5rem;

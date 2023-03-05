@@ -1,13 +1,15 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
-import { BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
+import { BREAKPOINT_DESKTOP, BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledRegisterSection = styled.section`
+width: 100%;
+height: 100%;
   @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
     ${(props) =>
       !props.isFull &&
       css`
-        margin: 1rem 2rem;
+        padding: 1rem 2rem;
       `};
   }
 
@@ -16,12 +18,17 @@ export const StyledRegisterSection = styled.section`
     grid-template-columns: 50% 50%;
   }
 
+  @media only screen and (min-width: ${BREAKPOINT_DESKTOP}) {
+    background-color: ${({ theme }) => theme.color.bg};
+  }
+
   & img {
     display: none;
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
       display: block;
       width: 100%;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
     }
   }
 `;
