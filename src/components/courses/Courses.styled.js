@@ -3,13 +3,15 @@ import { NavLink } from "react-router-dom";
 import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledCoursesSection = styled.section`
-  margin: 3rem 0;
   padding: 2rem;
   background-color: ${({ bgColor }) => bgColor};
 
   @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
-    padding: 2rem 5rem;
+    padding: 6rem 5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
 

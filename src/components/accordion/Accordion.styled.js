@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledAccordion = styled.div`
   padding: 0.5rem 0;
   font-weight: 300;
+
+  @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+    width: 70%;
+}
 
   & div {
     display: flex;

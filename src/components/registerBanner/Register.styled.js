@@ -1,10 +1,15 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
-import { BREAKPOINT_DESKTOP, BREAKPOINT_MOBILE, BREAKPOINT_TABLET } from "../../styles/breakpoints";
+import {
+  BREAKPOINT_DESKTOP,
+  BREAKPOINT_MOBILE,
+  BREAKPOINT_TABLET,
+} from "../../styles/breakpoints";
 
 export const StyledRegisterSection = styled.section`
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
+
   @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
     ${(props) =>
       !props.isFull &&
@@ -66,6 +71,12 @@ export const StyledRegisterBannerContent = styled.div`
 
     @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
       font-size: 2.2rem;
+
+      ${(props) =>
+        props.isLeft &&
+        css`
+          grid-area: text;
+        `}
     }
   }
 

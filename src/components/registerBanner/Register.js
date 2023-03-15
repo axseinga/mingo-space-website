@@ -8,7 +8,7 @@ import { Button } from "../button/Button";
 
 export const RegisterSection = ({ data }) => {
   return (
-    <StyledRegisterSection isFull={data?.isFull} isLeft={data?.isLeft}>
+    <StyledRegisterSection isFull={data?.isFull}>
       <img src={data?.image} />
       <StyledRegisterBannerContent
         isDark={data?.isDark}
