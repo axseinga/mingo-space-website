@@ -18,8 +18,9 @@ export const StyledPriceCard = styled.div`
   height: 270px;
   width: 24rem;
 
-  @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+  @media only screen and (max-width: ${BREAKPOINT_MOBILE}) {
     margin: 0.5rem;
+    width: 20rem;
   }
 
   & h2 {

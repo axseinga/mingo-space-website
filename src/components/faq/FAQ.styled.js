@@ -16,7 +16,7 @@ export const StyledFAQSection = styled.section`
       font-weight: 700;
       line-height: 2.5rem;
 
-      @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+      @media only screen and (max-width: ${BREAKPOINT_TABLET}) {
         text-align: center;
       }
     }

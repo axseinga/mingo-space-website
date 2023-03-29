@@ -19,6 +19,7 @@ export const PricingPageHeader = styled.div`
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 3.5rem;
+    text-align: center;
   }
 
   & p {
@@ -42,8 +43,7 @@ export const StyledPricingCards = styled.div`
   margin: 0 2rem;
 
   @media only screen and (max-width: ${BREAKPOINT_MOBILE}) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
   }
 `;

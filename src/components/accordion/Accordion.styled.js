@@ -7,7 +7,7 @@ export const StyledAccordion = styled.div`
 
   @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
     width: 70%;
-}
+  }
 
   & div {
     display: flex;
@@ -35,8 +35,14 @@ export const StyledAccordion = styled.div`
     ${({ show }) => {
       if (show) {
         return css`
-        height: 48px;
-        line-height: 1.6rem;`
+          height: 48px;
+          line-height: 1.6rem;
+
+          @media only screen and (max-width: ${BREAKPOINT_TABLET}) {
+            height: 210px;
+            max-height: max-content;
+          }
+        `;
       }
     }}
   }
