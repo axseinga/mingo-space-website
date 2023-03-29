@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledHeader, StyledHeaderFeatureBox } from "./pageHeader.styled";
 import { Button } from "../button/Button";
+import { Link } from "react-router-dom";
 
 export const Header = ({ data }) => {
     return (
@@ -18,7 +19,9 @@ export const Header = ({ data }) => {
                 <p dangerouslySetInnerHTML={{ __html: data?.paragraph }}></p>
                 {data?.btnText && (
                     <Button default big>
+                        <Link to="/register">
                         {data?.btnText}
+                        </Link>
                     </Button>
                 )}
             </div>

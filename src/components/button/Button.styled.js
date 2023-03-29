@@ -8,6 +8,11 @@ export const StyledButton = styled.button`
   border: none;
   padding: 0.5rem 1.5rem;
 
+  & a {
+    color: ${({ theme }) => theme.color.white};
+    text-decoration: none;
+  }
+
   ${(props) =>
     props.default &&
     css`
