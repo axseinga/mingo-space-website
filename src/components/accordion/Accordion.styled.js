@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledAccordion = styled.div`
@@ -27,8 +27,17 @@ export const StyledAccordion = styled.div`
     }
   }
 
-  & p {
-    margin-top: 1rem;
-    line-height: 1.6rem;
+  & > p {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s;
+
+    ${({ show }) => {
+      if (show) {
+        return css`
+        height: 48px;
+        line-height: 1.6rem;`
+      }
+    }}
   }
 `;

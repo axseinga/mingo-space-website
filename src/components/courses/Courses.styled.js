@@ -47,6 +47,11 @@ export const StyledCoursesGridItem = styled.div`
   height: max-content;
   position: relative;
   margin: 1rem 0;
+  overflow: hidden;
+
+  &:hover img {
+    transform: scale(1.2);
+  }
 
   & img {
     width: 100%;
@@ -54,6 +59,7 @@ export const StyledCoursesGridItem = styled.div`
     height: auto;
     border-radius: 10px;
     opacity: 0.7;
+    transition: transform 0.5s;
   }
 
   & span {

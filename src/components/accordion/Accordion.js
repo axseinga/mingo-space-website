@@ -5,7 +5,7 @@ export const Accordion = ({ question, answer }) => {
   const [show, setShow] = useState(false);
 
   return (
-    <StyledAccordion>
+    <StyledAccordion show={show}>
       <div>
         <p>{question}</p>
         <button type="button" onClick={() => setShow(!show)}>
@@ -15,7 +15,7 @@ export const Accordion = ({ question, answer }) => {
           />
         </button>
       </div>
-      {show ? <p>{answer}</p> : <></>}
+      <p>{answer}</p>
     </StyledAccordion>
   );
 };
