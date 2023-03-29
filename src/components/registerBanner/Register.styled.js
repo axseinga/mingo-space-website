@@ -7,33 +7,35 @@ import {
 } from "../../styles/breakpoints";
 
 export const StyledRegisterSection = styled.section`
-  width: 100%;
-  height: 100%;
+  & > div {
+    width: 100%;
+    height: 100%;
 
-  @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
-    ${(props) =>
-      !props.isFull &&
-      css`
-        padding: 1rem 2rem;
-      `};
-  }
-
-  @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  @media only screen and (min-width: ${BREAKPOINT_DESKTOP}) {
-    background-color: ${({ theme }) => theme.color.bg};
-  }
-
-  & img {
-    display: none;
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      ${(props) =>
+        !props.isFull &&
+        css`
+          padding: 1rem 2rem;
+        `};
+    }
+
+    @media only screen and (min-width: ${BREAKPOINT_TABLET}) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    @media only screen and (min-width: ${BREAKPOINT_DESKTOP}) {
+      background-color: ${({ theme }) => theme.color.bg};
+    }
+
+    & img {
+      display: none;
+      @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 `;
