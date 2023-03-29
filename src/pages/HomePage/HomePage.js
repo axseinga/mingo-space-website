@@ -2,7 +2,7 @@ import React from "react";
 import { StyledHomePage } from "./HomePage.styled";
 import { Header } from "../../components/pageHeader/pageHeader";
 import { CoursesSection } from "../../components/courses/Courses";
-import { ClassesSection } from "../../components/classesSection/classesSection";
+import { ClassesSection } from "../../components/classes/classes";
 import { TestimonialsSection } from "../../components/testimonials/Testimonials";
 import { FAQ } from "../../components/faq/FAQ";
 import { RegisterSection } from "../../components/registerBanner/Register";
