@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { BREAKPOINT_TABLET } from "../../styles/breakpoints";
 
 export const StyledAboutCourse = styled.section`
-  padding: 2rem;
+  padding: 2rem 6rem;
   background-color: ${({ bgColor, theme }) =>
     bgColor ? theme.color.bg : theme.color.white};
 

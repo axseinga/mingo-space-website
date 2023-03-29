@@ -21,7 +21,11 @@ export const CoursesSection = ({ data }) => {
       </StyledCoursesHeader>
       <StyledCoursesGrid>
         {data?.courses.map((course, i) => (
-          <Animate key={course.lang} variant={i % 2 === 0 ? "slide-left" : "slide-right"} delay={i * 0.3 + 1.2}>
+          <Animate
+            key={course.lang}
+            variant={i % 2 === 0 ? "slide-left" : "slide-right"}
+            delay={i * 0.3 + 1.2}
+          >
             <StyledNavLinkCourses to={course.href}>
               <StyledCoursesGridItem>
                 <img src={`./assets/${course.img}`} alt={course.lang} />

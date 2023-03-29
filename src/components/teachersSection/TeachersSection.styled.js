@@ -11,6 +11,8 @@ export const StyledTeachersSection = styled.section`
     margin: 2rem 5rem;
   }
 
+  & > div {
+
   & h2 {
     font-family: ${({ theme }) => theme.font.fontLora};
     color: ${({ theme }) => theme.color.black};
@@ -33,6 +35,7 @@ export const StyledTeachersSection = styled.section`
       text-align: center;
     }
   }
+}
 `;
 
 export const StyledTeachersCards = styled.div`

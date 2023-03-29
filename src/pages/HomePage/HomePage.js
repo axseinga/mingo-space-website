@@ -13,15 +13,15 @@ export const HomePage = () => {
   return (
     <StyledHomePage>
       <Header data={homepageConfig.headerSection} />
-      <Spacer times={5}/>
+      <Spacer times={5} />
       <CoursesSection data={homepageConfig.coursesSection} />
-      <Spacer times={5}/>
+      <Spacer times={5} />
       <ClassesSection data={homepageConfig.classesSection} />
-      <Spacer times={5}/>
+      <Spacer times={5} />
       <TestimonialsSection
         data={homepageConfig.testimonialsSection.testimonials}
       />
-      <Spacer times={5}/>
+      <Spacer times={5} />
       <FAQ data={homepageConfig.faq.questions} />
       <RegisterSection data={homepageConfig.registerBannerData} />
     </StyledHomePage>

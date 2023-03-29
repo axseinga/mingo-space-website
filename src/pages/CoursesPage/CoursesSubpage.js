@@ -14,8 +14,11 @@ export const CoursesSubpage = () => {
   return (
     <StyledCoursesSubpage>
       <Header data={language.header} />
+      <Spacer times={4}/>
       <AboutCourse data={language.about} />
+      <Spacer times={4}/>
       <TeachersSection data={language.teachers} />
+      <Spacer times={4}/>
       <LevelSection data={language.levels}/>
       <Spacer times={4}/>
       <RegisterSection data={language.buyCourses} />
