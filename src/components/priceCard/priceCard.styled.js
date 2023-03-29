@@ -16,7 +16,7 @@ export const StyledPriceCard = styled.div`
   gap: 1.2rem;
   padding: 3rem 2rem;
   height: 270px;
-  width: 100%;
+  width: 24rem;
 
   @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
     margin: 0.5rem;

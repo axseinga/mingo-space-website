@@ -10,6 +10,7 @@ export const StyledPolicyCard = styled.div`
     padding: 2.5rem 2rem;
     justify-items: center;
     gap: 1rem;
+    max-width: 25rem;
 
     @media only screen and (min-width: ${BREAKPOINT_MOBILE}) {
         margin: 0.5rem;

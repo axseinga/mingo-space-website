@@ -806,14 +806,14 @@ export const pricingPageConfig = {
     },
   ],
   registerBanner: {
-    image: "/assets/Pic_PrivateMandarinClassPricing.jpg",
+    image: "/assets/kidsclas.png",
     header: "Looking for kid-friendly classes?",
     subheader: "$15",
     content: `USD / <strong>30min</strong> class <br/>
       Mandarin, Malay, or Japanese`,
     isDark: true,
     isCenter: true,
-    isFull: false,
+    isFull: true,
   },
   policy: [
     {
