@@ -1,55 +1,59 @@
 {
-    "name": "mingo-space",
-    "version": "1.0.0",
-    "description": "Website for Mingo Space",
-    "main": "index.js",
-    "scripts": {
-        "start": "NODE_ENV=development webpack serve --mode development",
-        "build": "NODE_ENV=production webpack --mode production"
-    },
-    "browserslist": [
-        "defaults",
-        "not IE 11"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/axseinga/mingo-space-website.git"
-    },
-    "author": "Agnieszka Urbanowicz",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/axseinga/mingo-space-website/issues"
-    },
-    "homepage": "https://github.com/axseinga/mingo-space-website#readme",
-    "devDependencies": {
-        "@babel/core": "^7.17.9",
-        "@babel/plugin-transform-runtime": "^7.17.0",
-        "@babel/preset-env": "^7.16.11",
-        "@babel/preset-react": "^7.16.7",
-        "babel-loader": "^8.2.4",
-        "babel-plugin-macros": "^3.1.0",
-        "babel-plugin-styled-components": "^2.0.7",
-        "copy-webpack-plugin": "^10.2.4",
-        "css-loader": "^6.7.1",
-        "html-loader": "^3.1.0",
-        "html-webpack-plugin": "^5.5.0",
-        "mini-css-extract-plugin": "^2.6.0",
-        "node-sass": "^7.0.1",
-        "sass-loader": "^12.6.0",
-        "style-loader": "^3.3.1",
-        "webpack": "^5.72.0",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.8.1"
-    },
-    "dependencies": {
-        "file-loader": "^6.2.0",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-icons": "^4.3.1",
-        "react-router-dom": "^6.3.0",
-        "react-world-flags": "^1.5.0",
-        "styled-components": "^5.3.5",
-        "styled-reset": "^4.3.4",
-        "url-loader": "^4.1.1"
-    }
+  "name": "mingo-space",
+  "version": "1.0.0",
+  "description": "Website for Mingo Space",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack serve --mode development",
+    "build": "NODE_ENV=production webpack --mode production"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axseinga/mingo-space-website.git"
+  },
+  "author": "Agnieszka Urbanowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axseinga/mingo-space-website/issues"
+  },
+  "homepage": "https://github.com/axseinga/mingo-space-website#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.6",
+    "babel-loader": "^8.2.4",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "html-inline-script-webpack-plugin": "^3.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0.1",
+    "react-refresh": "^0.13.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "path": "^0.12.7",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
+    "react-world-flags": "^1.5.0",
+    "styled-components": "^5.3.5",
+    "styled-reset": "^4.3.4",
+    "url-loader": "^4.1.1"
+  }
 }
