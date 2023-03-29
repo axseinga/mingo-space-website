@@ -9,23 +9,23 @@ import { LevelSection } from "../../components/levelSection/levelSection";
 import { coursesSubpagesConfig } from "../../@config/config";
 import { Spacer } from "../../styles/elements";
 
-export const CoursesSubpage = () => {
-  const language = coursesSubpagesConfig.mandarin;
+export const CoursesSubpage = ({language}) => {
+  const lang = coursesSubpagesConfig[language];
   return (
     <StyledCoursesSubpage>
-      <Header data={language.header} />
+      <Header data={lang.header} />
       <Spacer times={4}/>
-      <AboutCourse data={language.about} />
+      <AboutCourse data={lang.about} />
       <Spacer times={4}/>
-      <TeachersSection data={language.teachers} />
+      <TeachersSection data={lang.teachers} />
       <Spacer times={4}/>
-      <LevelSection data={language.levels}/>
+      <LevelSection data={lang.levels}/>
       <Spacer times={4}/>
-      <RegisterSection data={language.buyCourses} />
+      <RegisterSection data={lang.buyCourses} />
       <Spacer times={6}/>
-      <TestimonialsSection data={language.testimonials} />
+      <TestimonialsSection data={lang.testimonials} />
       <Spacer times={6}/>
-      <RegisterSection data={language.registerBanner} />
+      <RegisterSection data={lang.registerBanner} />
     </StyledCoursesSubpage>
   );
 };

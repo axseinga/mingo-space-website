@@ -12,7 +12,10 @@ export const PagesRoutes = () => {
     <Routes>
       <Route exact path="/" element={<HomePage />} />
       <Route exact path="/courses" element={<CoursesPage />} />
-      <Route exact path="/courses/mandarin" element={<CoursesSubpage />} />
+      <Route exact path="/courses/mandarin" element={<CoursesSubpage language="mandarin" />} />
+      <Route exact path="/courses/japanese" element={<CoursesSubpage language="japanese" />} />
+      <Route exact path="/courses/malay" element={<CoursesSubpage language="malay" />} />
+      <Route exact path="/courses/kids" element={<CoursesSubpage language="kids" />} />
       <Route exact path="/pricing" element={<PricingPage />} />
       <Route exact path="/about" element={<AboutPage />} />
       <Route exact path="/resources" element={<div>Resources</div>} />
